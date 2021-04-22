@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ccc;
+}
+
+.comment {
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.comment-avatar {
+  margin-right: 10px;
+  color:#000;
+  padding: 10px;
+  text-align: center;
+  max-width: 100px;
+}
+
+.user-icon {
+  display: flex;
+  width: 100px;
+  height: auto;
+  color:#000;
+  margin-bottom: 10px;
+}
+
+.user-profile--link a{
+  text-decoration: none;
+  color: #409EFF;
+}
+
+.comment-body {
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.user-comment {
+  margin-bottom: 10px;
+}
+
+.comment-footer {
+  display: flex;
+  margin-top: auto;
+  margin-left: auto;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.nested-comment{
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #ccc;
+  }
+  
+  .comment {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .comment-avatar {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    align-items: center;
+    min-width: 100px;
+    margin-right: 10px;
+    padding: 10px;
+    color:#000;
+  }
+  
+  .user-icon {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    min-width: 60px;
+    height: auto;
+    color:#000;
+    margin-bottom: 10px;
+  }
+  
+  .user-profile--link a{
+    text-decoration: none;
+    color: #409EFF;
+  }
+  
+  .comment-body {
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .user-comment {
+    margin-bottom: 10px;
+  }
+  
+  .comment-footer {
+    display: flex;
+    margin-top: auto;
+    margin-left: auto;
+  }
+  
+  .footer-item:not(:last-child) {
+    margin-right: 5px;
+  }
+  
+  .nested-comment{
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    /* max-width: 576px; */
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ccc;
+  }
+  
+  .comment {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .comment-avatar {
+    margin-right: 10px;
+    color:#000;
+    padding: 10px;
+    text-align: center;
+    /* max-width: 80px; */
+  }
+  
+  .user-icon {
+    display: flex;
+    /* width: 70px; */
+    height: auto;
+    color:#000;
+    margin-bottom: 10px;
+  }
+  
+  .user-profile--link a{
+    text-decoration: none;
+    color: #409EFF;
+  }
+  
+  .comment-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #eee;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  .user-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .user-comment {
+    margin-bottom: 10px;
+  }
+  
+  .comment-footer {
+    display: flex;
+    margin-top: auto;
+    margin-left: auto;
+  }
+  
+  .footer-item:not(:last-child) {
+    margin-right: 5px;
+  }
+  
+  .nested-comment{
+    margin-left: 15px;
+  }
+  
+}
+
+@media screen and (max-width: 330px) {
+  .comment {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .comment-avatar {
+    padding: 0;
+    width: 70px;
+  }
+  .user-icon {
+    margin: 0 auto;
+    width: 70px;
+  }
+  .user-profile--link a {
+    font-size: 12px;
+  }
+  .user-name {
+    font-size: 14px;
+  }
+  .nested-comment{
+    margin-left: 10px;
+  }
+}
+
