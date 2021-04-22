@@ -2,6 +2,14 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -18,11 +26,10 @@ body {
 }
 
 .comment-avatar {
+  max-width: 100px;
   margin-right: 10px;
   color:#000;
-  padding: 10px;
   text-align: center;
-  max-width: 100px;
 }
 
 .user-icon {
@@ -59,16 +66,46 @@ body {
 
 .comment-footer {
   display: flex;
-  margin-top: auto;
-  margin-left: auto;
 }
 
 .footer-item:not(:last-child) {
   margin-right: 5px;
 }
 
+.footer-icons {
+  display: flex;
+}
+
+.footer-icons img{
+  margin: -2px;
+  border: 2px solid #fff;
+  width: 20px;
+  height: auto;
+  border-radius: 9999px;
+}
+
 .nested-comment{
   margin-left: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+label,
+textarea {
+    font-size: .8rem;
+    letter-spacing: 1px;
+    resize: none;
+}
+textarea {
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -93,7 +130,6 @@ body {
     flex-direction: column;
     justify-content: center; */
     align-items: center;
-    min-width: 100px;
     margin-right: 10px;
     padding: 10px;
     color:#000;
@@ -103,7 +139,7 @@ body {
     display: flex;
     align-items: start;
     justify-content: start;
-    min-width: 60px;
+    max-width: 60px;
     height: auto;
     color:#000;
     margin-bottom: 10px;
@@ -135,8 +171,8 @@ body {
   
   .comment-footer {
     display: flex;
-    margin-top: auto;
-    margin-left: auto;
+    /* margin-top: auto;
+    margin-left: auto; */
   }
   
   .footer-item:not(:last-child) {
@@ -207,8 +243,8 @@ body {
   
   .comment-footer {
     display: flex;
-    margin-top: auto;
-    margin-left: auto;
+    /* margin-top: auto;
+    margin-left: auto; */
   }
   
   .footer-item:not(:last-child) {
@@ -221,25 +257,33 @@ body {
   
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 320px) {
   .comment {
     font-size: 12px;
     margin-bottom: 10px;
   }
+
   .comment-avatar {
     padding: 0;
-    width: 70px;
+    width: 30px;
   }
+
   .user-icon {
     margin: 0 auto;
-    width: 70px;
+    width: 30px;
   }
+
   .user-profile--link a {
     font-size: 12px;
   }
   .user-name {
     font-size: 14px;
   }
+  .user-comment {
+    font-size: 12px;
+  }
+
+
   .nested-comment{
     margin-left: 10px;
   }
